@@ -1,8 +1,8 @@
 #Sasha Safonova
-#PHYS381
-#takes in the full list of spectral lines from Dr. Haar's website
-#Narrows down the list of possible elements by cross-checking it with
-#calibrated experimental data
+'''
+Narrows down the list of possible elements by cross-checking it with calibrated experimental data.
+Accompanied by a csv file of spectral wavelengths in Angstroms.
+'''
 #Last updated on 03.01.16 at 21.12
 
 import pandas as pd
