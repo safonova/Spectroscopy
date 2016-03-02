@@ -23,9 +23,10 @@ epsilon=7
 possibilities=np.array([])
 final=[]
 start=False
+min_intensity=10
 
 for lamb in unknownA:
-    tempemiss = emissions[(emissions[:,0]>(lamb-epsilon)) & (emissions[:,0]<(lamb+epsilon))& (emissions[:,1]>10)]
+    tempemiss = emissions[(emissions[:,0]>(lamb-epsilon)) & (emissions[:,0]<(lamb+epsilon))& (emissions[:,1]>min_intensity)]
     elements = tempemiss[:,2].tolist()
     temp=tempemiss.tolist()
     if start:
